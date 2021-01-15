@@ -41,3 +41,12 @@ end
 def over?(board)
   full?(board) || won?(board)
 end
+
+def winner(board)
+  winning_combo = won?(board)
+  if winning_combo
+    return winning_combo[0]
+  else
+    return nil
+  end
+end

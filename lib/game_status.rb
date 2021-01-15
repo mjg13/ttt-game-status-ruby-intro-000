@@ -33,3 +33,7 @@ def full?(board)
     spot != " " && spot != ""
   end
 end
+
+def draw?(board)
+  full?(board) && !(won?(board))
+end

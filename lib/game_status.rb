@@ -27,3 +27,9 @@ def won?(board)
     winning_combo?(board, win_combo, 'X') || winning_combo?(board, win_combo, 'O')
   end
 end
+
+def full?(board)
+  board.all? do |spot|
+    spot != " " && spot != ""
+  end
+end
